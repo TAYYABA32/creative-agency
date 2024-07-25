@@ -1,0 +1,248 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, black 62%, rgb(44, 5, 117));
+  /* padding: 5px 70px; */
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    gap: 30px;
+  }
+  .logo {
+    padding-left: 100px;
+  }
+  li {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+  }
+}
+.ull {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  padding-right: 100px;
+}
+li:hover {
+  border-bottom: 4px solid white;
+}
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  background: linear-gradient(to right, black 80%, rgb(44, 5, 117));
+  color: white;
+  padding-left: 100px;
+}
+.h1 {
+  color: #6d95fc;
+  font-size: 21px;
+  line-height: 31.5px;
+  font-weight: 500;
+}
+.welcome-intro {
+  font-weight: 200;
+  padding-top: 20px;
+
+  font-size: 50px;
+}
+.welcome-p {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+.welcome-btn {
+  border: 4px solid #6d95fc;
+  margin-top: 20px;
+  background: black;
+  color: white;
+
+  box-shadow: #6d95fc 0px 0px 10px;
+  padding: 10px 10px 10px 10px;
+}
+button:hover {
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+.img2 {
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+  margin-right: 100px;
+}
+.img3 {
+  object-fit: cover;
+  width: 500px;
+  height: 400px;
+  margin-left: 100px;
+  padding-top: 100px;
+}
+.span1 {
+  color: #6d95fc;
+}
+hr {
+  border: 2px solid #6d95fc;
+  width: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*///////////////// about-us */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+  align-items: center;
+  background: linear-gradient(to left, black 80%, rgb(44, 5, 117));
+  color: white;
+}
+.about {
+  padding-top: 100px;
+  font-weight: 300;
+  font-size: 21px;
+}
+.about-h1 {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 48px;
+}
+.about-p {
+  padding-top: 20px;
+}
+/*///////////////// services */
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, black 80%, rgb(44, 5, 117));
+  color: white;
+  padding-right: 100px;
+}
+.services-h1 {
+  padding-top: 200px;
+  padding-left: 100px;
+  font-weight: 200;
+  font-size: 21px;
+  padding-bottom: 200px;
+}
+.services-row {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+/*////////////////////// .achievements */
+.achievements {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left, black 80%, rgb(44, 5, 117));
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+/*///////////////// our work */
+.our-work {
+  padding: 50px 0;
+  text-align: center;
+  background: black 80%;
+  color: white;
+}
+
+.work-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.hr {
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  margin: 0 10px;
+  border: 2px solid #6d95fc;
+  width: 90px;
+}
+
+/* img-section */
+.img-section {
+  display: inline-flex;
+  background: black 80%;
+}
+.img10 {
+  object-fit: contain;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  height: 500px;
+  transition: 1s;
+  max-width: 100%;
+  height: 33vw;
+  margin: auto;
+  padding-top: 50px;
+}
+.img10:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+/* ///////////  <!-- dot Section Start --> */
+.dot {
+  padding: 50px 0;
+  text-align: center;
+  background: black 80%;
+  color: white;
+}
+/* ///////////  <!-- Why us --> */
+.why-row {
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 50px;
+  font-weight: 200;
+  font-size: 21px;
+  padding-bottom: 100px;
+}
+/*////////////////////// TESTIMONIALS */
+.TESTIMONIALS {
+  padding: 50px 0;
+  text-align: center;
+  background: black 80%;
+  color: white;
+}
+.test-hr {
+  border: none;
+  height: 4px;
+  background-color: #6a6cff;
+  margin: 0 auto 20px auto;
+  width: 9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.test-heading {
+  font-weight: 500;
+  font-size: 48px;
+}
+.test-img {
+  margin-top: 100px;
+  background: linear-gradient(to top, black 50%, rgb(44, 5, 117));
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
