@@ -146,12 +146,14 @@ hr {
   padding-bottom: 200px;
 }
 .services-row {
+  width: 45%;
+  height: 37vh;
   background: linear-gradient(
     to left,
     rgba(12, 12, 12, 0.1),
     rgba(44, 5, 117, 0.3)
   ) !important;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .services-row:hover {
@@ -213,17 +215,31 @@ hr {
   margin: auto;
   padding-top: 50px;
 }
-.img10:hover {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+.img-section img {
+  transition: transform 1s ease-in-out; /* Add transition effect */
 }
-/* ///////////  <!-- dot Section Start --> */
+
+.img-section img:hover {
+  cursor: pointer;
+  transform: scale(1.2); /* Increase image size by 10% on hover */
+}
+
+/* ///////////  <!-- img Section Start --> */
 .dot {
   padding: 50px 0;
   text-align: center;
   background: black 80%;
   color: white;
+  /* height: 33vw;
+  margin: auto;
+  margin-left: 1.5rem !important; */
 }
+/* .dott:hover {
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.2rem);
+} */
 /* ///////////  <!-- Why us --> */
 .why-row {
   padding-top: 150px;
@@ -255,15 +271,15 @@ hr {
 }
 .test-img {
   margin-top: 100px;
-  padding-bottom: 30px;
+  width: 70%;
+  margin-bottom: 20px;
   border-bottom: 2px solid #6d95fc;
   background: linear-gradient(
-    175.64deg,
-    rgba(17, 24, 42, 0.7) 19.67%,
-    rgba(17, 24, 42, 0) 121.51%
-  );
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgb(44, 5, 117) 0px 2px 4px 0px, rgb(44, 5, 117) 0px 0px 0px 1px inset;
+    to top,
+    rgba(12, 12, 12, 0.1) 20%,
+    rgba(44, 5, 117, 0.7)
+  ) !important;
+  border-radius: var(--bs-border-radius-lg) !important;
 }
 .testmo-container {
   display: grid;
