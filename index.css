@@ -80,7 +80,7 @@ li:hover {
   padding: 10px 10px 10px 10px;
 }
 button:hover {
-  border: 3px solid white;
+  border: 4px solid white;
   cursor: pointer;
 }
 
@@ -137,6 +137,7 @@ hr {
   color: white;
   padding-right: 100px;
 }
+
 .services-h1 {
   padding-top: 200px;
   padding-left: 100px;
@@ -145,8 +146,47 @@ hr {
   padding-bottom: 200px;
 }
 .services-row {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px;
+  /* rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #292375,
+    #4051b5
+  ); /* Adjust colors as needed */
+}
+
+.service-box {
+  width: 48%; /* Adjust width for desired spacing */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Add a slight overlay for better contrast */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.service-box img {
+  width: 100px; /* Adjust image size as needed */
+  margin-bottom: 20px;
+}
+
+.service-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 16px;
 }
 
 /*////////////////////// .achievements */
@@ -271,84 +311,89 @@ hr {
   background-position: right;
 }
 /*!-- ////////////////////// Contact --*/
+
 .contact-parent {
   display: flex;
-  justify-content: end;
+
+  justify-content: space-between;
   padding-top: 100px;
   /* justify-content: space-between; */
   align-items: center;
   background: linear-gradient(to left, black 70%, rgb(44, 5, 117));
   color: white;
   padding-left: 100px;
-  /* padding-right: 5px; */
-  padding-bottom: 150px;
+  padding-right: 100px;
+  padding-bottom: 100px;
 }
+
 .contact-info {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
 }
 
-.contact-container h5 {
-  font-size: 16px;
-  font-weight: bold;
-}
+.contact-container h5,
 .contact-container p {
   font-size: 16px;
   font-weight: bold;
 }
+
 .contact-p {
   color: #6d95fc;
 }
+
 .contact-img {
   width: 30px;
   height: 35px;
 }
+
 .container-row {
   display: flex;
   flex-direction: column;
   gap: 30px;
-
   padding: 20px;
 }
+
 .input {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
 }
+
 .contact-form {
   background: linear-gradient(
-    175.64deg,
-    rgba(17, 24, 42, 0.7) 19.67%,
-    rgba(17, 24, 42, 0) 121.51%
-  );
-
-  padding: 20px;
-  border-radius: 10px;
-  padding-right: 2px;
-  width: 25%;
-  margin: auto;
+    to top,
+    rgba(12, 12, 12, 0.1),
+    rgba(44, 5, 117, 0.3)
+  ) !important;
+  padding: 3rem !important;
+  border-radius: 5px;
+  width: 20%;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
+
 input,
 textarea {
-  width: 75%;
+  width: 100%; /* Ensure full width input and textarea */
   padding: 5px;
-  background-color: rgba(17, 24, 42, 0) 121.51%;
+  background-color: rgba(17, 24, 42, 0);
   border: 1px solid #ccc;
   border-radius: 1px;
-
   font-size: 14px;
 }
+
 ::placeholder {
-  color: #999; /* Set placeholder color */
+  color: #999;
 }
+
 /* ////////////////////////footer */
 
 body {
