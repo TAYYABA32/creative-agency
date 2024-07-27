@@ -133,7 +133,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, black 50%, rgb(44, 5, 117));
+  background: linear-gradient(to right, black 90%, rgb(44, 5, 117));
   color: white;
   padding-right: 100px;
 }
@@ -146,11 +146,20 @@ hr {
   padding-bottom: 200px;
 }
 .services-row {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px;
-  /* rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+  background: linear-gradient(
+    to left,
+    rgba(12, 12, 12, 0.1),
+    rgba(44, 5, 117, 0.3)
+  ) !important;
+  margin-bottom: 25px;
 }
-.services-img {
-  width: 40%;
+
+.services-row:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: 0px 0px 5px #a3baf5;
+  transition: 1s;
 }
 
 /*////////////////////// .achievements */
