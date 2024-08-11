@@ -3,28 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creatic Creative Agency</title>
   </head>
   <body>
     <!-- Navbar  Section Start -->
     <header>
-      <div class="navbar">
-        <img class="logo" src="images/LOGO.png" alt="#" />
-        <div class="ull">
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Pages</li>
-            <li>Cotact Us</li>
-          </ul>
-          <img src="images/img1.png" alt="#" />
-        </div>
-      </div>
+      <img class="logo"  src="images/LOGO.png" alt="#" />
+      
+      <span onclick="myFunction()">&#9776;</span>
+
+      <ul id="menu" class="navbar">
+        <li><a href="#" class="hover-line">Home</a></li>
+        <li><a href="#about" class="hover-line">About Us</a></li>
+        <li><a href="#services" class="hover-line">Services</a></li>
+        <li><a href="#pages"  class="hover-line">Pages</a></li>
+        <li><a href="#support" class="hover-line">Contact Us</a></li>
+        <li><img class="nav-img" src="images/img1.png" alt="#" /></li>
+      </ul>
+    
     </header>
-    <div class="welcome-section" id="portfolio">
-      <div>
+    <!--------------- welcome-section -->
+    <section id="portfolio">
+      <div class="welcome-container" >
         <p class="h1">Welcome to creatic</p>
         <p class="welcome-intro">
           WE ARE <br />
@@ -39,10 +41,10 @@
         <button class="welcome-btn">GET IN TOUCH</button>
       </div>
       <img class="img2" src="images/img2.png" alt="#" />
-    </div>
-    <!-- Aboutus  Section Start -->
+    </section>
 
-    <div class="about-us" id="about">
+    <!-- Aboutus  Section Start -->
+    <section  id="about">
       <img class="img3" src="images/img3.png" alt="#" />
       <div class="about">
         <p class="h1">ABOUT US</p>
@@ -65,17 +67,17 @@
         </p>
         <button class="welcome-btn">READ MORE</button>
       </div>
-    </div>
+    </section>
     <!-- Services  Section Start -->
-    <div class="services" id="services">
+    <section id="services">
       <div class="services-h1">
         <h1 class="h1">OUR SERVICES</h1>
-        <h1 class="welcome-intro">
+        <h1 class="welcomee-intro">
           Experience the power <br />
           of <span class="span1">innovation.</span>
         </h1>
         <hr />
-        <p>
+        <p class="welcome-p">
           Lorem ipsum Neque porro quisquam est qui do <br />lorem ipsum quia
           dolor sit amet, Neque porro elit <br />
           NeDque porro Neque porro quisquam est qui do <br />lorem ipsum quia
@@ -92,37 +94,18 @@
           <img class="services-row" src="images/img6.png" alt="#" />
           <img class="services-row" src="images/img7.png" alt="#" />
         </div>
-      </div>
-      <!-- <div class="services-container">
-        <div class="service-box">
-          <img src="images/img21.png" alt="Video Marketing" />
-          <h2>VIDEO MARKETING</h2>
-          <p>Lorem ipsum Neque do porro quisquam est qui do quam</p>
-        </div>
-        <div class="service-box">
-          <img src="images/graphic icon.png" alt="Graphic Design" />
-          <h2>GRAPHIC DESIGN</h2>
-          <p>Lorem ipsum Neque do porro quisquam est qui do quam</p>
+      </section>
+    
+      
 
-          <img src="images/ux.png" alt="UI/UX Design" />
-          <h2>UI/UX DESIGN</h2>
-          <p>Lorem ipsum Neque do porro quisquam est qui do quam</p>
-
-          <img src="images/Web icon.png" alt="Website Design" />
-          <h2>WEBSITE DESIGN</h2>
-          <p>Lorem ipsum Neque do porro quisquam est qui do quam</p>
-        </div>
-      </div> -->
+    <!-- Achievements Section Start -->
+     <div class="achievements">
+      <img class="ach-row" src="images/img8.png" alt="#" />
+      <img class="ach-row"src="images/img9.png" alt="#" />
+      <img class="ach-row"src="images/img10.png" alt="#" />
+      <img class="ach-row"src="images/Frame 28.png" alt="#" />
     </div>
-
-    <!-- Achievements  Section Start -->
-    <div class="achievements">
-      <img src="images/img8.png" alt="#" />
-      <img src="images/img9.png" alt="#" />
-      <img src="images/img10.png" alt="#" />
-      <img src="images/Frame 28.png" alt="#" />
-    </div>
-    <!-- Our work  Section Start -->
+   <!-- Our work  Section Start  -->
     <div class="our-work">
       <h1 class="heading">
         ENJOY OUR LATEST <br />
@@ -135,21 +118,20 @@
         <span>OUR WORK</span>
         <hr class="hr" width="50rem" />
       </div>
-    </div>
-    <!------------- img  Section Start -->
-    <div class="img-section" id="pages">
+    </div> 
+     <!-- img  Section Start -->
+    <div id="pages">
       <img class="img10" src="images/img11.png" alt="#" />
       <img class="img10" src="images/img12.png" alt="#" />
       <img class="img10" src="images/img13.png" alt="#" />
     </div>
 
     <div class="dot">
-      <img class="dott" src="images/img14.png" alt="#" />
+      <img src="images/img14.png" alt="#" />
     </div>
 
     <!-- Why us -->
-
-    <div class="services" id="categories">
+   <section id="categories">
       <div class="why-row">
         <h2>why us?</h2>
         <hr />
@@ -162,21 +144,21 @@
         <button class="welcome-btn">READ MORE</button>
       </div>
       <div class="why-row">
-        <p class="welcome-p">
+        <p class="welcome-pp">
           Lorem ipsum Neque porro quisquam est qui do <br />lorem ipsum quia
           dolor sit amet, Neque porro elit <br />
           NeDque porro Lorem ipsum
         </p>
 
-        <img src="images/Frame 35.png" alt="#" />
+        <img class="why-img"src="images/Frame 35.png" alt="#" />
       </div>
-    </div>
+    </section> 
 
     <!-- ////////////////////// TESTIMONIALS -->
-    <div class="testmo-container">
+    <section class="testmo-container">
       <div class="first"></div>
       <div class="TESTIMONIALS">
-        <h1 class="test-heading">
+        <h1 class="testt-heading">
           WHAT <span class="span1">OUR</span> <br />
           CLIENTS SAY?
         </h1>
@@ -187,13 +169,13 @@
         <button class="welcome-btn">VIEW ALL TESTIMONIALS</button>
       </div>
       <div class="last"></div>
-    </div>
+    </section> 
     <!-- ////////////////////// Contact -->
-    <div class="contact-parent" id="support">
-      <div>
-        <h1 class="test-heading">GET IN TOUCH</h1>
+     <section id="support">
+      <div class="support-container">
+        <h1 class="test-headingg">GET IN <span  class="span1">TOUCH</span> </h1>
         <hr />
-        <p>
+        <p  class="welcome-pp">
           Lorem ipsum Neque porro quisquam est qui do <br />
           lorem ipsum quia dolor sit amet, Neque porro elit <br />
           NeDque porro
@@ -223,28 +205,29 @@
           </div>
         </div>
       </div>
-      <!-- ----------form-section -->
+      <!-- form ------------------------>
       <div class="contact-form">
         <form>
           <div class="form-group">
-            <label for="name">Your Name</label>
-
+            <label id="name">YOUR NAME</label>
+              <br>
             <input class="input" type="text" id="name" name="name" required />
           </div>
           <div class="form-group">
-            <label for="name">Your EMAIL</label>
-
+            <label id="name">YOUR EMAIL</label>
+             <br>
             <input
               class="input"
               type="email"
+            
               id="email"
               name="email"
               required
             />
           </div>
           <div class="form-group">
-            <label for="message">Your Message</label>
-
+            <label id="name">YOUR MESSAGE</label>
+            <br>
             <textarea
               class="input"
               id="message"
@@ -253,12 +236,12 @@
               required
             ></textarea>
           </div>
-          <button class="welcome-btn">SEND MESSAGE</button>
+          <button class="send-button">SEND MESSAGE</button>
         </form>
       </div>
-    </div>
+    </section>
 
-    <!-- ////////////////////// footer-->
+   
 
     <footer>
       <div class="footer-content">
@@ -278,7 +261,7 @@
             </li>
             <li>
               <a href="#portfolio"> <span class="span1">Portfolio</span></a>
-            </li>
+            </li> 
             <li>
               <a href="#pages"><span class="span1">Pages</span></a>
             </li>
@@ -299,5 +282,20 @@
         <p>Copyright © 2023-2024 Creatic Agency All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+     function myFunction(){
+      var x = document.getElementById("menu");
+
+      if(x.style.display == "block")
+      {
+        x.style.display="none";
+      }
+      else{
+        x.style.display== "block";
+
+      }
+     }
+    </script>
   </body>
 </html>
