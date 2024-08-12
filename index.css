@@ -14,12 +14,13 @@ header {
   background: linear-gradient(to right, black 62%, rgb(44, 5, 117));
   padding: 20px 70px;
 }
-/* span {
+.hamburger {
   margin: 0px 20px;
   font-size: 28px;
   cursor: pointer;
   display: none;
-} */
+}
+
 .welcome-container {
   margin-top: 250px;
 }
@@ -475,7 +476,7 @@ footer {
 
 .footer-content h1 {
   font-size: 2rem;
-  color: #4a4aff;
+  color: #6d95fc;
 }
 
 .footer-content h2 {
@@ -484,7 +485,7 @@ footer {
 }
 .footer-hr {
   width: 6%;
-  border: 2px solid #4a4aff;
+  border: 2px solid #6d95fc;
   margin: 0.5rem auto;
   margin-bottom: 20px;
 }
@@ -530,7 +531,7 @@ footer {
   }
 
   .welcome-container {
-    width: 70%;
+    width: 100%;
     margin-top: 130px;
   }
   .welcome-intro {
@@ -547,13 +548,16 @@ footer {
     border-bottom: 0.0001px solid #444;
     height: 100px;
     width: 100%;
+    padding: 0px 18px;
   }
+
   #portfolio {
     border-bottom: 0.1px solid #444;
   }
   header .navbar {
     flex-direction: column;
     display: none;
+    position: relative;
   }
 
   /* aboutt ////////////////////////////////////*/
@@ -713,18 +717,38 @@ footer {
   .ach-row {
     height: 150px;
   }
-  /* span {
+  .hamburger {
+    cursor: pointer;
     display: block;
     background-color: rgb(34, 4, 91);
-    width: 55px;
-    height: 45px;
+    width: 53px;
+    height: 40px;
     text-align: center;
     color: rgb(2, 151, 238);
-  } */
+    box-shadow: #6d95fc 0px 0px 20px;
+  }
   ul li {
     display: block;
+    margin: 25px;
+    font-weight: 500;
+    margin-left: 35px;
   }
   ul {
     display: block;
+  }
+
+  #menu {
+    width: 100%;
+    background: linear-gradient(to right, black 62%, rgb(44, 5, 117));
+    position: absolute;
+    top: 80px;
+    border-bottom: 0.1px solid #444;
+    right: 0;
+  }
+  .footer-hr {
+    width: 13%;
+  }
+  .span11 {
+    color: #6d95fc;
   }
 }
