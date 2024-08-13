@@ -76,7 +76,7 @@ section {
   color: white;
 }
 .img2 {
-  width: 55%;
+  width: 40%;
 }
 
 a {
@@ -121,6 +121,9 @@ hr {
   padding-top: 20px;
 
   font-size: 60px;
+  max-width: 500px;
+
+  text-align: left;
 }
 
 /* aboutt ////////////////////////////////////*/
@@ -524,18 +527,28 @@ footer {
   margin: 0 10px;
 }
 /* responsive ////////////*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 800px) {
+  .welcome-p {
+    font-size: 21px;
+    line-height: 1.2;
+  }
   hr {
     width: 80px;
     border: 2px solid #6d95fc;
   }
 
   .welcome-container {
-    width: 100%;
+    max-width: 720px;
     margin-top: 130px;
+    width: 75%;
+  }
+
+  .img2 {
+    width: 33%;
+    height: 100%;
   }
   .welcome-intro {
-    font-size: 31px;
+    font-size: 32px;
   }
   /* .welcome-p {
     --bs-text-opacity: 1;
@@ -717,6 +730,7 @@ footer {
   .ach-row {
     height: 150px;
   }
+
   .hamburger {
     cursor: pointer;
     display: block;
