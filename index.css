@@ -6,16 +6,6 @@
   box-sizing: border-box;
 }
 
-.nav-img {
-  /* width: 70px;
-  height: 45px; */
-
-  /* border-radius: 20px;
-  background: linear-gradient(to right, #000, #240070);
-  transition: width 0.4s ease-in-out;
-  cursor: pointer; */
-}
-
 /* .nav-img:hover {
   width: 10px;
 } */
@@ -27,8 +17,8 @@
 } */
 .box {
   height: 44px;
-
-  border-radius: 30px;
+  width: 33%;
+  border-radius: 20px;
   background: rgb(16, 5, 65);
   background: linear-gradient(
     90deg,
@@ -39,24 +29,31 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 5px;
+  padding: 10px;
+  transition: width 0.3s ease-in-out;
+  position: relative;
 }
-
-/* .box:focus {
-  width: 200px;
-  padding-left: 0;
-}
-.box:hover {
-  width: 10px;
-} */
 
 input[type="search"] {
   border: none;
   outline: none;
+  width: 10%;
+
+  flex-grow: 1;
+  background: transparent;
+  color: white;
+  transition: width 0.3s ease-in-out;
+  padding: 0 10px;
 }
-input {
-  width: 18px;
-  border-radius: 1px;
+.box:hover {
+  width: 100%;
+}
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a1a1a1; /* Adjust the icon color */
+  pointer-events: none; /* Prevent the icon from being clicked */
 }
 
 header {
@@ -500,8 +497,8 @@ label {
 
 input,
 textarea {
-  width: 100%; /* Ensure full width input and textarea */
-  padding: 10px 40px;
+  /* width: 100%;
+  padding: 10px 30px; */
 
   background-color: rgba(17, 24, 42, 0);
   border: 1px solid #ccc;
@@ -639,7 +636,7 @@ footer {
     flex-direction: column;
     display: none;
     position: relative;
-    transition: 0.2s;
+    transition: all 0.5s;
   }
 
   /* aboutt ////////////////////////////////////*/
