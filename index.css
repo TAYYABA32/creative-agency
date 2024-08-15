@@ -26,9 +26,9 @@
   padding-left: 0;
 } */
 .box {
-  /* height: 2.5rem;
-  width: 30%; */
-  border-radius: 20px;
+  height: 44px;
+
+  border-radius: 30px;
   background: rgb(16, 5, 65);
   background: linear-gradient(
     90deg,
@@ -53,6 +53,10 @@
 input[type="search"] {
   border: none;
   outline: none;
+}
+input {
+  width: 18px;
+  border-radius: 1px;
 }
 
 header {
