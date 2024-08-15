@@ -808,6 +808,27 @@ footer {
     color: rgb(2, 151, 238);
     box-shadow: #6d95fc 0px 0px 20px;
   }
+  .box {
+    height: 44px;
+    width: 12%;
+    border-radius: 20px;
+    background: rgb(16, 5, 65);
+    background: linear-gradient(
+      90deg,
+      rgba(16, 5, 65, 1) 26%,
+      rgba(2, 0, 36, 1) 52%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+  }
+  .box:hover {
+    width: 0;
+  }
   ul li {
     display: block;
     margin: 25px;
@@ -904,7 +925,7 @@ footer {
   .achievements {
     display: block;
 
-    padding-left: 48px;
+    padding-left: 38px;
 
     padding-bottom: 80px;
   }
